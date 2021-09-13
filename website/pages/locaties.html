@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kras</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: min(100%, 900px);
+            margin: 0 auto;
+        }
+
+        #container > div {
+            background-color: rgba(50%, 50%, 50%, .25);
+            border-radius: 5px;
+            width: calc(50% - 50px);
+            height: max-content;
+            margin-top: 20px;
+        }
+
+        div > h1 {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        div > a {
+            display: block;
+            width: calc(100% - 100px);
+            margin: 10px auto;
+        }
+
+        a > img {
+            display: block;
+            width: 100%;
+        }
+
+        div > img {
+            display: block;
+            margin: 10px auto;
+            width: calc(100% - 100px);
+        }
+
+        @media (max-width: 650px) {
+            #container > div {
+                width: calc(100vw - 50px);
+            }
+        }
+
+        input {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        <img src="../images/logo.png" alt="logo">
+        Kras Design
+    </h1>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="locaties.html">Locaties</a>
+        <a href="englishloc.html">English</a>
+
+    </nav>
+</header>
+<div id="container">
+    <div>
+        <h1>Locaties</h1>
+        <p>
+            Wij zijn net nog verhuist naar een nieuwe locatie voor een schonere en betere omgeving voor ons team, je kan
+            hier de route vinden!<br>
+            <br>
+            (Druk op het plaatje om naar Google Maps te gaan)
+        </p>
+        <a href="https://goo.gl/maps/y1vAA3Zs14saX3dU9" target="_blank">
+            <img src="../images/maps.png" alt="google maps">
+
+        </a>
+
+
+    </div>
+    <div class="footer">
+        <center>
+            <p>Laat je email achter voor updates!<br>
+                <label></label><input type="text" placeholder="Naam">
+                <label></label><input type="text" placeholder="E-mail-adres">
+                <br>
+                <input type="submit" value="Verstuur">
+                <br> <br> <br>
+            </p>
+
+        </center>
+    </div>
+
+</body>
+</html>
